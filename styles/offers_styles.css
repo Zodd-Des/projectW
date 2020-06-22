@@ -298,12 +298,12 @@ section
 {
 	position: fixed;
 	width: 100%;
-	background:  linear-gradient(to right, #006f98,#00BFA0);
+	background:  linear-gradient(to right, #006f9842,rgba(0, 191, 159, 0.26));
 	z-index: 12;
 }
 .header.scrolled
 {
-	background:#1b0b32;
+	background:#1b0b32c9;
 }
 
 /*********************************
@@ -861,7 +861,7 @@ button.bttn a
 
 
 /*********************************
-7. Footer
+13. Footer
 *********************************/
 
 .footer
@@ -869,7 +869,7 @@ button.bttn a
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #1b0b32;
+	background: #1b0b32c9;
 }
 .footer_title
 {
@@ -880,7 +880,7 @@ button.bttn a
 }
 
 /*********************************
-7.1 Footer - About
+13.1 Footer - About
 *********************************/
 
 .footer_about
@@ -954,7 +954,7 @@ button.bttn a
 
 
 /*********************************
-7.2 Footer - Tags
+13.3 Footer - Tags
 *********************************/
 
 .footer_tags
@@ -990,7 +990,7 @@ button.bttn a
 }
 
 /*********************************
-7.3 Footer - Contact Info
+13.4 Footer - Contact Info
 *********************************/
 
 .contact_info_list
@@ -1025,25 +1025,13 @@ button.bttn a
 	color: #ffd000;
 }
 
-
-/*********************************
-7.4 Footer - Newsletter
-*********************************/
-.newsletter{
-	float:right; 
-	padding-bottom:50px;
-}
-.form-element{
-	padding-right: 50px;
-}
-
 /*********************************
 14. Copyright
 *********************************/
 
 .copyright
 {
-	background:  #1b0b32;
+	background:  #1b0b32c9;
 }
 .copyright_content
 {
@@ -1053,7 +1041,7 @@ button.bttn a
 {
 	font-size: 12px;
 	font-weight: 600;
-	color: #31d;
+	color: rgb(8, 4, 29);
 }
 .footer_nav_container
 {
@@ -1069,7 +1057,7 @@ button.bttn a
 {
 	font-size: 12px;
 	font-weight: 600;
-	color: #31124b;
+	color: rgb(8, 4, 29);
 	text-transform: uppercase;
 	line-height: 2;
 	-webkit-transition: all 200ms ease;

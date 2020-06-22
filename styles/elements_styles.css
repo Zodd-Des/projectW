@@ -304,14 +304,13 @@ section
 {
 	position: fixed;
 	width: 100%;
-	background:  linear-gradient(to right, #006f98,#00BFA0);
+	background:  linear-gradient(to right, #006f9842,rgba(0, 191, 159, 0.26));
 	z-index: 12;
 }
 .header.scrolled
 {
-		background:#1b0b32;
+	background:#1b0b32c9;
 }
-
 /*********************************
 3.1 Top Bar
 *********************************/
@@ -1136,7 +1135,7 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #1b0b32;
+	background: #1b0b32c9;
 }
 .footer_title
 {
@@ -1298,7 +1297,7 @@ section
 
 .copyright
 {
-	background:  #1b0b32;
+	background:  #1b0b32c9;
 }
 .copyright_content
 {
@@ -1308,7 +1307,7 @@ section
 {
 	font-size: 12px;
 	font-weight: 600;
-	color: #31d;
+	color: rgb(8, 4, 29);
 }
 .footer_nav_container
 {
@@ -1324,7 +1323,7 @@ section
 {
 	font-size: 12px;
 	font-weight: 600;
-	color: #31124b;
+	color: rgb(8, 4, 29);
 	text-transform: uppercase;
 	line-height: 2;
 	-webkit-transition: all 200ms ease;
