@@ -44,7 +44,9 @@
 	src: url('../fonts/beyond_the_mountains.otf')  format('truetype'),
 		 url('../fonts/beyond_the_mountains.ttf')  format('opentype');
 }
-
+:root {
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -59,11 +61,10 @@
 }
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 14px;
 	font-weight: 400;
-	background: linear-gradient(to right, #006f98,#00BFA0);
-	color: #a5a5a5;
+	
 }
 div
 {
@@ -80,7 +81,7 @@ ul
 }
 p
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -130,7 +131,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -238,8 +239,8 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: #ffd000;
-	opacity: 0.7;
+	background: #929191;
+	opacity: 1;
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -271,40 +272,26 @@ section
 	vertical-align: middle;
 	width: 5.75px;
 	height: 5.63px;
-	background: #ffd000;
+	background: #77dd77;
 	border-radius: 50%;
 	margin-right: 2px;
 }
-.button span:first-child
-{
-	margin-left: 10px;
-}
-.button span:nth-child(2)
-{
-	opacity: 0.6;
-}
-.button span:last-child
-{
-	opacity: 0.4;
-	margin-right: 0px;
-}
+
 
 /*********************************
 3. Header
 *********************************/
-
 .header
 {
 	position: fixed;
 	width: 100%;
-	background:  linear-gradient(to right, #006f9842,rgba(0, 191, 159, 0.26));
+	background: #77dd773a;
 	z-index: 12;
 }
 .header.scrolled
 {
-	background:#1b0b32c9;
+	background: #929191a8;
 }
-
 /*********************************
 3.1 Top Bar
 *********************************/
@@ -313,7 +300,7 @@ section
 {
 	width: 100%;
 	height: 36px;
-	background:  linear-gradient(to right, #00678d94,#00BFA0);
+
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -333,44 +320,9 @@ section
 	line-height: 36px;
 	font-size: 10px;
 	font-weight: 600;
-	color: #fff;
+	color: black;
 }
-.social_list_item
-{
-	position: relative;
-	display: inline-block;
-	margin-right: 3px;
-}
-.social_list_item:last-child
-{
-	margin-right: 0px;
-}
-.social_list_item a
-{
-	display: block;
-	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 36px;
-}
-.social_list_item:hover a i
-{
-	color: #ffd000;
-}
-.social_list_item a i
-{
-	font-size: 12px;
-	color: #fff;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.social_list_item a:hover
-{
-	color: #ffd000
-}
+
 .user_box_link
 {
 	display: inline-block;
@@ -381,12 +333,12 @@ section
 	font-size: 10px;
 	line-height: 36px;
 	font-weight: 600;
-	color: #ffd000;
+	color: black;
 	text-transform: uppercase;
 }
 .user_box_link a:hover
 {
-	color: #ffd000;
+	color: #77dd77;
 }
 .user_box_login
 {
@@ -398,14 +350,14 @@ section
 	position: absolute;
 	top: 15px;
 	right: -9px;
-	background: #ffd000;
+	background: #77dd77;
 	width: 1px;
 	height: 9px;
 	content: '';
 }
 .main_nav_col
 {
-	height: 143px;
+	height: 100px;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -439,9 +391,9 @@ section
 }
 .logo a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 30px;
-	color: #ffd000;
+	color: #77dd77;
 	font-weight: 800;
 	text-transform: uppercase;
 }
@@ -460,24 +412,54 @@ section
 /*********************************
 3.3 Main Nav
 *********************************/
+.sub-nav{
+	width: 100%;
+	height: 50px;
 
-.main_nav_container
-{
-	margin-right: 221px;
-}
-.main_nav_item
-{
+  }
+  
+  .sub-nav ul{
+	padding-left: 300px;
+  }
+  nav ul li{
+	list-style: none;
 	position: relative;
 	display: inline-block;
-	margin-right: 40px;
-}
-.main_nav_item:last-child
-{
-	margin-right: 0px;
-}
+  }
+  .sub-nav ul li a{
+	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	color: #fff;
+	font-size: 14px;
+	padding: 20px 30px;
+	text-decoration: none;
+  }
+  .sub-nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: black;
+	padding: 10px;
+	border-radius: 0 0 4px 4px;
+  
+  }
+  .sub-nav ul li:hover ul{
+	display: block;
+  }
+  .sub-nav ul li ul li{
+	width: 180px;
+	border-radius: 4px;
+  }
+  .sub-nav ul li ul li a{
+	padding: 8px 14px;
+  
+  }
+  .sub-nav ul li ul a:hover{
+	background-color: #77dd77;
+  }
+
 .main_nav_item a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 13px;
 	font-weight: 600;
 	color: #FFFFFF;
@@ -493,7 +475,7 @@ section
 	bottom: -11px;
 	width: calc(100% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #006f98,#00BFA0);;
+	background: #fff;
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -538,7 +520,7 @@ section
 }
 .content_search:hover .mag_glass
 {
-	fill: #ffd000;
+	fill: #fff;
 }
 .search_form
 {
@@ -560,7 +542,7 @@ section
 {
 	width: 100%;
 	height: 100%;
-	background: #ffd000;
+	background: #FFFFFF;
 	color: #1b0b32;
 	padding-left: 20px;
 	outline: none !important;
@@ -575,6 +557,7 @@ section
 	-o-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
 	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
 }
+
 
 /*********************************
 3.4 Menu
@@ -602,18 +585,17 @@ section
 .hamburger i
 {
 	font-size: 24px;
-	color: #ffd000;
+	color: #77dd77;
 }
 .hamburger:hover i
 {
-	color: #ffd000;
+	color: #77dd77;
 }
 .menu
 {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background:  linear-gradient(to right, #006f98,#00BFA0);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -649,7 +631,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Beyond';
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 36px;
 	color: #FFFFFF;
 	font-weight: 400;
@@ -722,7 +704,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #fa9e1c;
+	background: #77dd77;
 }
 
 /*********************************
@@ -770,7 +752,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	opacity:0.7;
+	opacity:1;
 }
 .home_slider_content
 {
@@ -875,11 +857,11 @@ section
 }
 .home_slider_custom_dot:hover
 {
-	color: #ffd000;
+	color: #77dd77;
 }
 .home_slider_custom_dot:hover.active div
 {
-	border-color: #ffd000;
+	border-color: #77dd77;
 }
 .home_slider_custom_dot.active
 {
@@ -915,7 +897,7 @@ section
 {
 	width: 100%;
 	height: 192px;
-	background: linear-gradient(to right, #006f98,#00BFA0);
+	background:#77dd77;
 	z-index: 10;
 }
 .search_tabs_container
@@ -933,7 +915,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 700;
-	color: #2d2c2c;
+	color: #77dd77;
 	text-transform: uppercase;
 	text-align: center;
 	height: 100%;
@@ -958,7 +940,7 @@ section
 
 .search_tab.active
 {
-	background: #ffd000;
+	background: #77dd77;
 	color: #FFFFFF;
 }
 .search_tab.active img
@@ -971,7 +953,7 @@ section
 }
 .search_tab:hover
 {
-	background: #ffd000;
+	background: #77dd77;
 	color: #FFFFFF;
 }
 .search_tab:hover img
@@ -1054,22 +1036,22 @@ section
 }
 .dropdown_item_select:hover
 {
-	border: solid 1px #ffd000;
+	border: solid 1px #77dd77;
 }
 .dropdown_item_select:focus
 {
-	outline-color: #ffd000;
+	outline-color: #77dd77;
 }
 .search_button
 {
 	font-size: 13px;
 	font-weight: 700;
-	color: #fff;
+	color: #77dd77;
 	text-transform: uppercase;
 	line-height: 53px;
 	padding-left: 46px;
 	padding-right: 46px;
-	background: linear-gradient(to right, #006f98,#00BFA0);
+	background: #FFFFFF;
 	-webkit-transform: translateY(15px);
 	-moz-transform: translateY(15px);
 	-ms-transform: translateY(15px);
@@ -1081,7 +1063,7 @@ section
 }
 .search_button:hover
 {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 /*********************************
@@ -1104,30 +1086,29 @@ section
 .intro
 {
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 105px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 .intro_title
 {
 	font-weight: 700;
-	color: #fff;
+	color: black;
 	margin-top: -14px;
 }
 .intro_text
 {
-	margin-top: 21px;
+	margin-top: 10px;
 }
 .intro_text p
 {
-	font-size: 24px;
-	font-style: italic;
-	color: #33466E;
+	font-size: 18px;
+	color: black;
 	line-height: 1.336;
 	margin-bottom: 0px;
 }
 .intro_items
 {
-	margin-top: 69px;
+	margin-top: 10px;
 }
 .intro_item
 {
@@ -1142,26 +1123,27 @@ section
 	width: 100%;
 	height: 100%;
 	z-index: 2;
-	
 }
 .intro_item_background
 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
-	opacity: 0.7;
+	opacity: 0.5;
+	border-radius: 50px;
 }
 .intro_item_content
 {
 	width: 100%;
 	height: 100%;
 	z-index: 3;
+	
 }
 .intro_header
 {
@@ -1181,37 +1163,45 @@ section
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 27px;
-	background: #33466E;
+	background: #929191;
 	border-radius: 14px;
 }
-.intro_button
+
+.services{
+    margin: auto;
+	text-align: center;
+	width: 100%;
+	background: #929191;
+}
+
+.services_background
 {
 	position: absolute;
-	bottom: 51px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
+	bottom: -34px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.5;
 }
 
-.intro_center p
-{
-	font-size: 20px;
-	font-weight: 100;
-	color: #fff;
-	letter-spacing: -0.05em;
+i{
+    color: black;
 }
-
-.rating
-{
-	margin-top: 10px;
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #929191;
+    border-radius: 50%;
 }
-.rating i
-{
-	font-size: 19px;
-	margin-right: 4px;
+.col-md-3:hover{
+    box-shadow: 5px 7px 9px -3px #1b0b32;
+    cursor:pointer;
 }
 
 
@@ -1221,9 +1211,9 @@ section
 
 .cta
 {
-	padding-top: 125px;
+	padding-top: 0px;
 	padding-bottom: 116px;
-	background:  linear-gradient(to right, #3389a8,rgb(50, 153, 136));
+	
 }
 .cta_background
 {
@@ -1235,39 +1225,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	opacity: 0.27;
-}
-
-/*********************************
-8.1 CTA Slider
-*********************************/
-
-
-.cta_item
-{
-	padding-top: 75px;
-	padding-bottom: 61px;
-	padding-left: 90px;
-	padding-right: 90px;
-	background: #ffeb8d;
-}
-.cta_title
-{
-	font-size: 30px;
-	font-weight: 700;
-	color: #33466E;
-	text-transform: uppercase;
-}
-.cta_text
-{
-	font-weight: 600;
-	line-height: 2.29;
-	margin-top: 14px;
-	margin-bottom: 0px;
-}
-.cta_button
-{
-	margin-top: 38px;
+	opacity: 1;
 }
 
 
@@ -1280,7 +1238,7 @@ section
 	width: 100%;
 	padding-top: 105px;
 	padding-bottom: 43px;
-	background:  linear-gradient(to right, #3389a8,rgb(50, 153, 136));
+	background: #929191;
 	opacity: 1;
 }
 .offers_items
@@ -1306,6 +1264,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	border-radius: 200px;
 }
 .offer_name
 {
@@ -1314,7 +1273,7 @@ section
 	bottom: 27px;
 	width: 180px;
 	height: 33px;
-	background: #ffd000;
+	background: #77dd77;
 	overflow: hidden;
 }
 .offer_name a
@@ -1337,7 +1296,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 400;
-	color: aliceblue;
+	color: black;
 	margin-top: 16px;
 }
 
@@ -1371,7 +1330,7 @@ section
 	width: 100%;
 	padding-top: 105px;
 	padding-bottom: 105px;
-	background:  linear-gradient(to right, #3389a8,rgb(50, 153, 136));
+	background:  #77dd77;
 }
 .test_border
 {
@@ -1380,7 +1339,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background:  linear-gradient(to right, #006f98,#00BFA0);
+	background:  #77dd77;
 }
 
 /*********************************
@@ -1390,11 +1349,12 @@ section
 .test_slider_container
 {
 	width: 100%;
+	height: 65vh;
 	margin-top: 54px;
 }
 .test_item
 {
-	padding-top: 36px;
+	height: 60vh;
 }
 
 .test_icon img
@@ -1410,7 +1370,8 @@ section
 	width: 150px !important;
 }
 .test_image img{
-	height:auto;
+	height: auto;
+	border-radius: 35px 35px 0px 0px;
 }
 .test_content_container
 {
@@ -1418,8 +1379,9 @@ section
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 40%;
-	background: #1b0b32c9;
+	height: 60%;
+	background:#929191;
+	border-radius: 0px 0px 35px 35px;
 }
 .test_content
 {
@@ -1428,13 +1390,17 @@ section
 	padding-left: 40px;
 	padding-top: 20px;
 	padding-right: 40px;
+	
+}
+.test_content p{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .test_item_info
 {
 	position: absolute;
 	left: 41px;
 	bottom: calc(100% - 18px);
-	background: #ffd000;
+	background: #FFFFFF;
 	padding-left: 20px;
 	padding-right: 21px;
 	padding-top: 9px;
@@ -1445,21 +1411,21 @@ section
 {
 	font-size: 14px;
 	font-weight: 700;
-	color: #fff;
+	color: black;
 	text-transform: uppercase;
 }
 
 .test_quote_title
 {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: black;
 	padding-left: 3px;
 }
 .test_quote_text
 {
 	font-weight: 500;
-	color: #FFFFFF;
+	color: black;
 	margin-top: 11px;
 }
 .test_slider_nav
@@ -1498,78 +1464,7 @@ section
 	fill: url(#test_grad_next);
 }
 
-/*********************************
-12. Features
-*********************************/
 
-#features{
-    padding-top:50px;
-	padding-bottom: 50px;
-	background: linear-gradient(to right, #3389a8,rgb(50, 153, 136));
-}
-
-.logo3,.logo4,.logo5{
-    width:100px;
-}
-.feature-row{
-    width:80%;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    flex-wrap:wrap;
-}
-.feature-col{
-    flex-basis:25%;
-    text-align:center;
-}
-.feature-col h4{
-    margin-bottom:15px;
-    font-size:20px;
-    font-weight:400;
-    color: #1b0b32;
-}
-.feature-col p{
-	color: #FFFFFF;
-}
-.feature-btn{
-    margin:80px auto 0;
-    display:flex;
-    align-items:flex-end;
-	justify-content:center;
-	
-}
-.feature-btn line{
-    text-align: right;
-    display: inline-block;
-    margin-right: 25px;
-}
-.feature-col p{
-    font-size: 15px;
-}
-
-.line-1{
-    width:15px;
-    height:15px;
-    display:inline-block;
-    background:  linear-gradient(to right, #006f98,#ffBFA0);;
-}
-.line-2{
-    width:80px;
-    height:1px;
-    display:inline-block;
-    background: linear-gradient(to right, #006f98,#ffBFA0);
-}
-.line-3{
-    width:60px;
-    height:1px;
-    display:inline-block;
-    background: linear-gradient(to right, #006f98,#ffBFA0);;
-}
-.line{
-    line-height:8px;
-    margin: 30px 0 0 30px;
-}
 /*********************************
 12. Contact
 *********************************/
@@ -1604,7 +1499,7 @@ section
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-bottom: 88px;
-	background: #1b0b32c9;
+	background: #929191;
 	margin-top: 100px;
 }
 .contact_form
@@ -1660,7 +1555,7 @@ section
 	line-height: 53px;
 	padding-left: 29px;
 	padding-right: 29px;
-	background: #31124b;
+	background: #77dd77;
 	-webkit-transform: translateY(15px);
 	-moz-transform: translateY(15px);
 	-ms-transform: translateY(15px);
@@ -1720,7 +1615,7 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #1b0b32c9;
+	background: #252525;
 }
 .footer_title
 {
@@ -1796,11 +1691,11 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #77dd77;
 }
 .footer_social_item:hover a i
 {
-	color: #ffd000;
+	color: #77dd77;
 }
 
 
@@ -1827,7 +1722,7 @@ section
 }
 .tag_item:hover
 {
-	background: #ffd000;
+	background: #77dd77;
 }
 .tag_item a
 {
@@ -1873,7 +1768,7 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #ffd000;
+	color: #77dd77;
 }
 
 /*********************************
@@ -1882,7 +1777,7 @@ section
 
 .copyright
 {
-	background:  #1b0b32c9;
+	background:  #252525;
 }
 .copyright_content
 {
@@ -1893,31 +1788,4 @@ section
 	font-size: 12px;
 	font-weight: 600;
 	color: rgb(8, 4, 29);
-}
-.footer_nav_container
-{
-	height: 52px;
-}
-
-.footer_nav_item
-{
-	display: inline-block;
-	margin-right: 40px;
-}
-.footer_nav_item a
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: rgb(8, 4, 29);
-	text-transform: uppercase;
-	line-height: 2;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_nav_item a:hover
-{
-	color: #FFFFFF;
 }

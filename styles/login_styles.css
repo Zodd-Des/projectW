@@ -12,9 +12,11 @@
 
 body{
     margin: 0px;
-    background:url("../images/pic20.jpg");
+    background:url("../images/cxx.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+ 
     
     
 }
@@ -45,7 +47,7 @@ body{
     height: 550px;
     position: relative;
     margin: 2rem;
-    background: linear-gradient(to right, #054e69,rgb(1, 116, 96)); 
+    background: #77dd77;
     padding: 2px;
     overflow: hidden;
     justify-self: center;
@@ -61,7 +63,7 @@ body{
 #btn{
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #cf22cfe1, #4210cc); 
+  background: #777; 
   border-radius: 30px;
   position: absolute;
   width: 110px;
@@ -92,7 +94,7 @@ body{
 .social-icons a i{
     width: 15px; 
     margin: 0 5px;
-    background:linear-gradient(to right, #a7065cb6, #4210cc); 
+    background: #777;
     border-radius: 50%;
     box-shadow: 0 0 20px 0 #7f7f7f3d;
     padding: 10px 20px;
@@ -125,7 +127,7 @@ body{
     cursor: pointer;
     display: block;
     margin: auto;
-    background:linear-gradient(to right, #a7065cb6, #4210cc);
+    background: #777;
     border: 0;
     outline: none;
     border-radius: 30px;
